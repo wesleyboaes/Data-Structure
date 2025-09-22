@@ -27,11 +27,13 @@ int main()
     p2 -> x = 8;
     p2 -> y = 13;
 
-    /* This is the manual form to chain elements. */
-    p -> next = p1; // I use as reference the pointer "p" to point to the next one, that is "p1", using the pointer "next" that have the same type "point" as "p".
+    // This is the manual way to chain elements.
+    p -> next = p1; // I reference the pointer "p" to point to the next one, witch is "p1", using the pointer "next" witch has the same type "point" as "p".
     // p1 -> next = NULL; // Here the "p1" does not have any pointer to point yet, so it is "NULL".
     p1 -> next = p2; // Here the "p1" point to the next one, "p2".
     p2 -> next = NULL; // The same as the "p1" example (when "p2" did not exists).
+
+    // Here a have the problem of the number of elements chained. If I need a large number of elements, I can not insert them all.
 
     return 0;
 }
