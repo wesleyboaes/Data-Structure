@@ -26,6 +26,7 @@ int main()
     p1 -> next = NULL; // Here the "p1" does not have any pointer to point yet, so it is "NULL".
 
     printf("Hello World");
+    printf("Hello World");
     
     return 0;
 }
