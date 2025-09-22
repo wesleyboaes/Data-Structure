@@ -25,5 +25,7 @@ int main()
     p -> next = p1; // I use as reference the pointer "p" to point to the next one, that is "p1", using the pointer "next" that have the same type "point" as "p".
     p1 -> next = NULL; // Here the "p1" does not have any pointer to point yet, so it is "NULL".
 
+    printf("Hello World");
+    
     return 0;
 }
